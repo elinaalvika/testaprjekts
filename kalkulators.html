@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="text" id="pirmais">
+    <button onclick="saskaitisana()">+</button>
+    <button onclick="atnemsana()">-</button>
+    <button onclick="reizinasana()">*</button>
+    <button onclick="dalisana()">/</button>
+    <input type="text" id= "otrais">
+    <br> <br>
+    <div id= "res"></div>
+    
+    <script>
+        function saskaitisana() {
+            var pirmais = parseFloat(document.getElementById("pirmais").value);
+            var otrais = parseFloat(document.getElementById("otrais").value);
+
+            var result= pirmais + otrais;
+            document.getElementById("res").innerHTML= pirmais + "+" + otrais + "=" + result  
+        }
+
+        function atnemsana() {
+            var pirmais = parseFloat(document.getElementById("pirmais").value);
+            var otrais = parseFloat(document.getElementById("otrais").value);
+
+            var result= pirmais - otrais;
+            document.getElementById("res").innerHTML= pirmais + "-" + otrais + "=" + result
+        }
+
+        function reizinasana() {
+            var pirmais = parseFloat(document.getElementById("pirmais").value);
+            var otrais = parseFloat(document.getElementById("otrais").value);
+
+            var result= pirmais * otrais;
+            document.getElementById("res").innerHTML= pirmais + "*" + otrais + "=" + result
+        }
+
+        function dalisana() {
+            var pirmais = parseFloat(document.getElementById("pirmais").value);
+            var otrais = parseFloat(document.getElementById("otrais").value);
+
+            var result= pirmais / otrais;
+            document.getElementById("res").innerHTML= pirmais + "/" + otrais + "=" + result
+        }
+    </script>
+    
+</body>
+</html>
